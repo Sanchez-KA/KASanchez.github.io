@@ -9,6 +9,12 @@
     background-color: #ff0000;
   }
 </style>
+  
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+  });
+</script>
 <html>
 <head>
   <title>Bootstrap Container and Grid System</title>
@@ -20,24 +26,24 @@
 <center><h2>January 2001</h2></center>
 
 <center>
-  <div class="container">
-    <div class="row border">
-      <div class="col text-danger">Su</div>
-      <div class="col">Mo</div>
-      <div class="col">Tu</div>
-      <div class="col">We</div>
-      <div class="col">Th</div>
-      <div class="col">Fr</div>
-      <div class="col text-danger">Sa</div>
+  <div class="container bg-dark text-white">
+    <div class="row border font-weight-bold">
+      <div class="col text-danger">Sunday</div>
+      <div class="col">Monday</div>
+      <div class="col">Tuesday</div>
+      <div class="col">Wednesday</div>
+      <div class="col">Thursday</div>
+      <div class="col">Friday</div>
+      <div class="col text-danger">Saturday</div>
     </div>
   </div>
 </center>
 
 <center>
-  <div class="container">
+  <div class="container bg-secondary text-white">
     <div class="row">
       <div class="col"></div>
-      <div class="col holiday text-white">1</div>
+      <div class="col holiday text-white" href="#" data-toggle="tooltip" title="New Year">1</div>
       <div class="col">2</div>
       <div class="col">3</div>
       <div class="col">4</div>
@@ -48,7 +54,7 @@
 </center>
 
 <center>
-  <div class="container">
+  <div class="container bg-secondary text-white">
     <div class="row">
       <div class="col text-danger">7</div>
       <div class="col">8</div>
@@ -56,13 +62,13 @@
       <div class="col">10</div>
       <div class="col">11</div>
       <div class="col">12</div>
-      <div class="col active text-white">13</div>
+      <div class="col active text-white" href="#" data-toggle="tooltip" title="Birthday">13</div>
     </div>
   </div>
 </center>
 
 <center>
-  <div class="container">
+  <div class="container bg-secondary text-white">
     <div class="row">
       <div class="col text-danger">14</div>
       <div class="col">15</div>
@@ -76,11 +82,11 @@
 </center>
 
 <center>
-  <div class="container">
+  <div class="container bg-secondary text-white">
     <div class="row">
       <div class="col text-danger">21</div>
       <div class="col">22</div>
-      <div class="col">23</div>
+      <div class="col holiday text-white" href="#" data-toggle="tooltip" title="First Philippine Republic Day">23</div>
       <div class="col">24</div>
       <div class="col">25</div>
       <div class="col">26</div>
@@ -90,7 +96,7 @@
 </center>
 
 <center>
-  <div class="container">
+  <div class="container bg-secondary text-white">
     <div class="row">
       <div class="col text-danger">28</div>
       <div class="col">29</div>
